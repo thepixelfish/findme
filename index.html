@@ -1,25 +1,82 @@
 <body onload="typeWriter()">
   <div class="ff7">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <script src="javascriptstuff.js"></script> -->
     <h1>Luke Turner</h1>
     <p id="demo"></p>
   </div>
 
   <div class="ff7" style="width: 200px">
-    <section>
-      <p>Github</p>
-    </section>
-    <section>
-      <p>Linkedin</p>
-    </section>
-    <section>
-      <p>Instagram</p>
-    </section>
-    <section>
-      <p>Portfolio</p>
-    </section>
+    <ul class="no_bullet">
+      <li id="a" onclick=" window.open('https://github.com/thepixelfish','_blank')">
+        <img src="img/FF7Cursor.png" id="ai" alt="pointer" style="margin-bottom: -3px;">
+        Github
+      </li>
+      <li id="b" onclick=" window.open('https://www.linkedin.com/in/luke-turner-8488a812a/','_blank')">
+        <span><img src="img/FF7Cursor.png" id="bi" alt="pointer" style="margin-bottom: -3px;"></span>
+        Linkedin
+      </li>
+      <li id="c" onclick=" window.open('http://google.com','_blank')">
+        <span><img src="img/FF7Cursor.png" id="ci" alt="pointer" style="margin-bottom: -3px;"></span>
+        Portfolio
+      </li>
+      <li id="d" onclick=" window.open('https://www.instagram.com/thepixelfish/?hl=en','_blank')">
+        <span><img src="img/FF7Cursor.png" id="di" alt="pointer" style="margin-bottom: -3px;"></span>
+        Instagram
+      </li>
+    </ul>
   </div>
+   <script>
+    $(function() {
+      $('#a').hover(function() {
+        $('#ai').css('opacity', '1');
+      }, function() {
+        // on mouseout, reset the background colour
+        $('#ai').css('opacity', '0');
+      });
+    });
+
+    $(function() {
+      $('#b').hover(function() {
+        $('#bi').css('opacity', '1');
+      }, function() {
+        // on mouseout, reset the background colour
+        $('#bi').css('opacity', '0');
+      });
+    });
+
+    $(function() {
+      $('#c').hover(function() {
+        $('#ci').css('opacity', '1');
+      }, function() {
+        // on mouseout, reset the background colour
+        $('#ci').css('opacity', '0');
+      });
+    });
+
+    $(function() {
+      $('#d').hover(function() {
+        $('#di').css('opacity', '1');
+      }, function() {
+        // on mouseout, reset the background colour
+        $('#di').css('opacity', '0');
+      });
+    });
+  </script>
+  <script>
+  var pointer = document.getElementById("my-pointer");
+
+  pointer.addEventListener("mouseover", function()
+  {
+    pointer.style.opacity = 0.5;
+  });
+
+  pointer.addEventListener("mouesout", function()
+  {
+    pointer.style.opacity = 1.0;
+  });
+  </script>
 
   <script>
   var i = 0;
