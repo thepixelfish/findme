@@ -1,4 +1,5 @@
 <body onload="typeWriter()">
+<!--Style borrowed and built upon from codepen user Terrance Rob. https://codepen.io/terrancerobb/pen/bnuqe -->
   <div class="ff7">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -28,6 +29,8 @@
     </ul>
   </div>
    <script>
+
+   //Github button
     $(function() {
       $('#a').hover(function() {
         $('#ai').css('opacity', '1');
@@ -37,6 +40,7 @@
       });
     });
 
+    //linkedin button
     $(function() {
       $('#b').hover(function() {
         $('#bi').css('opacity', '1');
@@ -46,6 +50,7 @@
       });
     });
 
+    //portfolio button
     $(function() {
       $('#c').hover(function() {
         $('#ci').css('opacity', '1');
@@ -55,6 +60,7 @@
       });
     });
 
+    //instagram button
     $(function() {
       $('#d').hover(function() {
         $('#di').css('opacity', '1');
@@ -63,19 +69,6 @@
         $('#di').css('opacity', '0');
       });
     });
-  </script>
-  <script>
-  var pointer = document.getElementById("my-pointer");
-
-  pointer.addEventListener("mouseover", function()
-  {
-    pointer.style.opacity = 0.5;
-  });
-
-  pointer.addEventListener("mouesout", function()
-  {
-    pointer.style.opacity = 1.0;
-  });
   </script>
 
   <script>
